@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "shabnam";
+    src: local(),url(./Shabnam-FD.woff2);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fafafa;
+    font-family: "shabnam",sans-serif;
+}
+.container{
+    max-width: 1216px;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+.section-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.section-link{
+    color: #1565C0;
+    text-decoration: none;
+}
+.section-title{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.section-title-icon{
+    width: 22px;
+    height: 22px;
+    color:#1565C0;
+}
+
+.row{
+    display: flex;
+    gap:24px
+}
+.product{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 6px 3px rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+    font-size: 15px;
+    padding:20px
+}
+.product-image{
+    border-radius: inherit;
+    width: 100%;
+    display: inline-block;
+}
+.product-link{
+    display: inline-block;
+    color:black;
+    text-decoration: none;
+    line-height: 1.6;
+    height: 68px;
+
+}
+.product-offer{
+    display: flex;
+    align-items: center;
+    gap:6px;
+    margin-top: 16px;
+
+}
+.product-offer-percent{
+    background-color: #E1F5FE;
+    color: #1976D2;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 4px;
+
+}
+.product-offer-price{
+    color: #546E7A;
+    text-decoration: line-through;
+}
+.product-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.product-price{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.product-price-number{
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-price-unit{
+    font-size: 14px;
+    color: #141a1d;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.product-rating-number{
+    font-size: 14px;
+    color: #546E7A;
+
+}
+
+.product-rating-icon{
+    width: 18px;
+    height: 18px;
+    color: yellow;
+}
