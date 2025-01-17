@@ -1,119 +1,81 @@
-@font-face {
-    font-family: "shabnam";
-    src: local(),url(./Shabnam-FD.woff2);
-}
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
 body{
-    background: #fafafa;
-    font-family: "shabnam",sans-serif;
+    font-family: "poppins";
+    background-color: #080710;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
 }
 .container{
-    max-width: 1216px;
-    margin-top: 56px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
+    position: relative;
 }
-.section-head{
-    display: flex;
-    justify-content: space-between;
+.circle1{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right,#0D47A1,#2196F3);
+    position: absolute;
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    z-index: -1;
+}
+.login-form{
+    width: 400px;
+    height:auto;
+    background-color: rgba(255, 255, 255, 0.13);
+    border:2px solid rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    padding: 50px 35px 35px 35px;
+    backdrop-filter: blur(50px);
+}
+h3{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 400;
     margin-bottom: 24px;
 }
-.section-link{
-    color: #1565C0;
-    text-decoration: none;
+label{
+    margin-bottom: 10px;
 }
-.section-title{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.section-title-icon{
-    width: 22px;
-    height: 22px;
-    color:#1565C0;
-}
-
-.row{
-    display: flex;
-    gap:24px
-}
-.product{
+input{
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 6px 3px rgba(0, 0, 0, 0.01);
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border: none;
+    font-weight: 300;
+    padding-left: 15px ;
     border-radius: 10px;
-    font-size: 15px;
-    padding:20px
+    margin-bottom: 40px;
 }
-.product-image{
-    border-radius: inherit;
+
+label,input{
+    display: block;
+}
+
+button{
     width: 100%;
-    display: inline-block;
-}
-.product-link{
-    display: inline-block;
-    color:black;
-    text-decoration: none;
-    line-height: 1.6;
-    height: 68px;
-
-}
-.product-offer{
-    display: flex;
-    align-items: center;
-    gap:6px;
-    margin-top: 16px;
-
-}
-.product-offer-percent{
-    background-color: #E1F5FE;
-    color: #1976D2;
-    font-weight: bold;
-    padding: 2px 4px;
-    border-radius: 4px;
-
-}
-.product-offer-price{
-    color: #546E7A;
-    text-decoration: line-through;
-}
-.product-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 6px;
-}
-.product-price{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.product-price-number{
+    height: 50px;
     font-size: 18px;
     font-weight: bold;
-}
-.product-price-unit{
-    font-size: 14px;
-    color: #141a1d;
-}
-.product-rating{
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-.product-rating-number{
-    font-size: 14px;
-    color: #546E7A;
-
+    border-radius: 10px;
+    border: none;
+    
 }
 
-.product-rating-icon{
-    width: 18px;
-    height: 18px;
-    color: yellow;
+.circle2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: linear-gradient(to right,#FF8A65,#E65100);
+    bottom: -100px;
+    right: -100px;
+    z-index: -1;
 }
