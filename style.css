@@ -79,3 +79,9 @@ button{
     right: -100px;
     z-index: -1;
 }
+
+@medi screen and (max-width:250px;){
+    .login-form{
+        width:190px;
+    }
+}
